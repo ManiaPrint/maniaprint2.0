@@ -1,0 +1,37 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff" />
+      <stop offset="100%" stop-color="#0088ff" />
+    </linearGradient>
+    <linearGradient id="neonGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006aff" />
+      <stop offset="100%" stop-color="#00d4ff" />
+    </linearGradient>
+    <linearGradient id="neonGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a28" />
+      <stop offset="100%" stop-color="#252535" />
+    </linearGradient>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#neonGlow)">
+    <path d="M58 24L22 44L22 64L58 44L58 24Z" fill="url(#neonGradient3)" opacity="0.9" />
+    <path d="M58 16L22 36L22 56L58 36L58 16Z" fill="url(#neonGradient2)" opacity="0.8" />
+    <path d="M58 8L22 28L22 48L58 28L58 8Z" fill="url(#neonGradient1)" />
+
+    <path d="M40 21L40 38" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9" />
+    <path d="M48 17L48 34" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+    <path d="M32 24L32 41" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" opacity="0.8" />
+
+    <circle cx="22" cy="28" r="3" fill="#00d4ff" />
+    <circle cx="58" cy="8" r="3" fill="#00d4ff" />
+    <circle cx="58" cy="44" r="3" fill="#00d4ff" />
+  </g>
+</svg>
